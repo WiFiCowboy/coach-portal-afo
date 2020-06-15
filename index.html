@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFO</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/img/attLogo.png" type="image/png" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"
+          ><img src="assets/img/attLogo.png" width="40" /><span
+            class="brand-name"
+            >AT&T</span
+          ><span class="navbar-header"> Field Operations West </span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Links</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Links</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/images/pathToYourImage.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#!" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-film"></i>
+          <h3>Town Hall</h3>
+          <p>
+            Focus on top 3 upcoming events and link to the ATO Events page
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <i class="fas fa-users"></i>
+          <h3>Corporate Activities</h3>
+          <p>
+            Focus on top 3 upcoming events and link to the ATO Events page
+          </p>
+        </div>
+      </div>
+      <hr class="my-4" />
+    </div> -->
+
+    <!--- Meet the team -->
+    <!-- <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Did You Know?</h1>
+        </div>
+        <hr />
+        <div class="col-12">
+          <p class="lead">
+            Fun Facts/Trivia/Officer Profile (Get to Know) / Like Feature &
+            Comments Enabled
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+    <!--- Cards -->
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/avatar-img.jpg" />
+            <div class="card-body">
+              <h4 class="card-title">Jane Doe</h4>
+              <p class="card-text">
+                YTD Attainment
+              </p>
+              <canvas id="chLine"></canvas>
+              <br />
+              <p class="card-text">
+                Metrics
+              </p>
+              <label>HPC</label>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 100%;"
+                  aria-valuenow="3"
+                  aria-valuemin="0"
+                  aria-valuemax="3"
+                >
+                  3.0 of 3.0
+                </div>
+              </div>
+              <label>VOC</label>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 93%;"
+                  aria-valuenow="93"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  93%
+                </div>
+              </div>
+              <label>AIQ</label>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 95%;"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  95%
+                </div>
+              </div>
+              <br />
+              <a href="#" class="btn btn-outline-secondary">See Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/avatar-img.jpg" />
+            <div class="card-body">
+              <h4 class="card-title">John Doe II</h4>
+              <p class="card-text">
+                YTD Attainment
+              </p>
+              <canvas id="chLine-2"></canvas>
+              <br />
+              <p class="card-text">
+                Metrics
+              </p>
+              <label>HPC</label>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 67%;"
+                  aria-valuenow="2.01"
+                  aria-valuemin="0"
+                  aria-valuemax="3"
+                >
+                  2.01 of 3.0
+                </div>
+              </div>
+              <label>VOC</label>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 45%;"
+                  aria-valuenow="45"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  45%
+                </div>
+              </div>
+              <label>AIQ</label>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 80%;"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="90"
+                >
+                  80%
+                </div>
+              </div>
+              <br />
+              <a href="#" class="btn btn-outline-secondary">See Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/avatar-img.jpg" />
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">
+                YTD Attainment
+              </p>
+              <canvas id="chLin-3"></canvas>
+              <br />
+              <p class="card-text">
+                Metrics
+              </p>
+              <label>HPC</label>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-warning text-dark"
+                  role="progressbar"
+                  style="width: 95%;"
+                  aria-valuenow="2.85"
+                  aria-valuemin="0"
+                  aria-valuemax="3"
+                >
+                  2.85 of 3.0
+                </div>
+              </div>
+              <label>VOC</label>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 100%;"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  100%
+                </div>
+              </div>
+              <label>AIQ</label>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-warning text-dark"
+                  role="progressbar"
+                  style="width: 80%;"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="90"
+                >
+                  80%
+                </div>
+              </div>
+              <br />
+              <a href="#" class="btn btn-outline-secondary">See Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart samples -->
+    <!-- <div class="container">
+      <div class="row my-3">
+        <div class="col">
+          <h4>Bootstrap 4 Chart.js</h4>
+        </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-md-6 py-1">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="chLine"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 py-1">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="chBar"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-2">
+        <div class="col-md-4 py-1">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="chDonut1"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-1">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="chDonut2"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-1">
+          <div class="card">
+            <div class="card-body">
+              <canvas id="chDonut3"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
