@@ -1,7 +1,8 @@
 // onclick to file
-document.getElementById("details-page-js").onclick = function () {
-  location.href = "./pages/details.html";
-};
+// only for full deployment (GH pages issue)
+// document.getElementById("details-page-js").onclick = function () {
+//   location.href = "./pages/details.html";
+// };
 
 // tool tip toggle
 $(function () {
