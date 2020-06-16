@@ -1,6 +1,6 @@
 // onclick to file
 document.getElementById("details-page-js").onclick = function () {
-  location.href = "/details.html";
+  location.href = "./pages/details.html";
 };
 
 // tool tip toggle
