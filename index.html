@@ -181,7 +181,7 @@
               <label>HPC</label>
               <div class="progress">
                 <div
-                  class="progress-bar bg-danger"
+                  class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
                   role="progressbar"
                   style="width: 67%;"
                   aria-valuenow="2.01"
@@ -194,7 +194,7 @@
               <label>VOC</label>
               <div class="progress">
                 <div
-                  class="progress-bar bg-danger"
+                  class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
                   role="progressbar"
                   style="width: 45%;"
                   aria-valuenow="45"
@@ -207,7 +207,7 @@
               <label>AIQ</label>
               <div class="progress">
                 <div
-                  class="progress-bar bg-danger"
+                  class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
                   role="progressbar"
                   style="width: 80%;"
                   aria-valuenow="80"
@@ -239,7 +239,7 @@
               <label>HPC</label>
               <div class="progress">
                 <div
-                  class="progress-bar bg-warning text-dark"
+                  class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark"
                   role="progressbar"
                   style="width: 95%;"
                   aria-valuenow="2.85"
@@ -265,7 +265,7 @@
               <label>AIQ</label>
               <div class="progress">
                 <div
-                  class="progress-bar bg-warning text-dark"
+                  class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark"
                   role="progressbar"
                   style="width: 80%;"
                   aria-valuenow="80"
@@ -276,8 +276,88 @@
                 </div>
               </div>
               <br />
-              <a href="#" class="btn btn-outline-secondary">See Details</a>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModal3"
+              >
+                Details
+              </button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3-->
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModal3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModal3Label">Details</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <i class="fas fa-home"></i>
+                Home Dispatch
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <i class="fas fa-flag"></i>
+                Months Attained
+                <span
+                  class="badge badge-success badge-pill"
+                  data-toggle="tooltip-miss"
+                  data-placement="bottom"
+                  title="APR | MAY | JUN | JUL"
+                  >4</span
+                >
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <i id="blank-flag" class="far fa-flag"></i>
+                Missed Attainment Months
+                <span
+                  class="badge badge-danger badge-pill"
+                  data-toggle="tooltip-miss"
+                  data-placement="bottom"
+                  title="JAN | FEB | MAR"
+                  >3</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>

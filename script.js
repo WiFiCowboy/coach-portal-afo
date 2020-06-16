@@ -1,3 +1,11 @@
+// tool tip toggle
+$(function () {
+  $('[data-toggle="tooltip-miss"]').tooltip();
+});
+$(function () {
+  $('[data-toggle="tooltip-met"]').tooltip();
+});
+
 /* chart.js chart examples */
 
 // chart colors
