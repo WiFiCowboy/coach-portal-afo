@@ -1,9 +1,20 @@
+// onclick to file
+document.getElementById("details-page-js").onclick = function () {
+  location.href = "/details.html";
+};
+
 // tool tip toggle
 $(function () {
   $('[data-toggle="tooltip-miss"]').tooltip();
 });
 $(function () {
   $('[data-toggle="tooltip-met"]').tooltip();
+});
+
+// table function
+$(document).ready(function () {
+  $("#dtBasicExample").DataTable();
+  $(".dataTables_length").addClass("bs-select");
 });
 
 /* chart.js chart examples */
