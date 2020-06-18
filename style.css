@@ -50,6 +50,10 @@ body {
   margin-bottom: 0;
 }
 
+.alert {
+  background-color: red;
+}
+
 /* padding class styles */
 .padding {
   padding-bottom: 2rem;
@@ -65,6 +69,9 @@ body {
   color: #563d7c;
 }
 
+.fa-wrench,
+.fa-stopwatch,
+.fa-shipping-fast,
 .fa-users {
   color: #2163af;
 }
@@ -125,7 +132,8 @@ body {
 }
 
 .fa-youtube,
-.fa-window-close {
+.fa-window-close,
+.fa-exclamation-triangle {
   color: #bb0000;
 }
 
@@ -139,7 +147,10 @@ body {
 .fa-google:hover,
 .fa-instagram:hover,
 .fa-youtube:hover,
-.fa-comment-alt:hover {
+.fa-comment-alt:hover,
+.fa-wrench:hover,
+.fa-stopwatch:hover,
+.fa-shipping-fast:hover {
   color: #d5d5d5;
 }
 

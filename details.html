@@ -52,62 +52,1063 @@
     </nav>
     <!-- details page -->
 
+    <!-- Main Content -->
     <div class="container-fluid padding">
       <div class="row padding">
-        <h1>Details Test</h1>
+        <!-- Work Summary -->
         <div class="col-md-4">
-          <div class="card">
-            <!-- <div class="card-header bg-warning">
-              Employee Detail
-            </div> -->
+          <!-- Content -->
+          <div class="card h-100">
+            <div class="card-header bg-warning">
+              Work Summary
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <i class="fas fa-clipboard-list text-secondary"></i>
+                  Total Jobs
+                  <span
+                    class="badge badge-primary badge-pill"
+                    data-toggle="tooltip-miss"
+                    data-placement="bottom"
+                    title="install x 4"
+                    >4</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <i class="fas fa-clipboard-check text-success"></i>
+                  CMP jobs
+                  <span
+                    class="badge badge-success badge-pill"
+                    data-toggle="tooltip-miss"
+                    data-placement="bottom"
+                    title="install x 3"
+                    >3</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <i class="fas fa-times-circle text-danger"></i>
+                  INC Jobs
+                  <span
+                    class="badge badge-danger badge-pill"
+                    data-toggle="tooltip-miss"
+                    data-placement="bottom"
+                    title="install x 1"
+                    >1</span
+                  >
+                </li>
+              </ul>
+              <ul class="list-group list-group-flush">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Job Summary
+                  <i
+                    class="fas fa-wrench"
+                    data-toggle="modal"
+                    data-target="#jobSummary"
+                  ></i>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Time Summary
+                  <i
+                    class="fas fa-stopwatch"
+                    data-toggle="modal"
+                    data-target="#timeSummary"
+                  ></i>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Logistic Summary
+                  <i
+                    class="fas fa-shipping-fast"
+                    data-toggle="modal"
+                    data-target="#logSummary"
+                  ></i>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-            <!-- Content -->
-            <div class="card">
-              <div class="card-header bg-warning">
-                Job Summary
+          <!-- Modal Job Summary -->
+          <div
+            class="modal modal-xl"
+            id="jobSummary"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Job Summary
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-warning">
+                      <tr>
+                        <th>Job</th>
+                        <th>WORK ORDER</th>
+                        <th>DISPOUT</th>
+                        <th>CMP</th>
+                        <th>JOBTYPE</th>
+                        <th>TRANSPORT</th>
+                        <th>EARNED</th>
+                        <th>DURATION</th>
+                        <th>STATUS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>W01101000</td>
+                        <td>Mar-5 08:00</td>
+                        <td>Mar-5 10:00</td>
+                        <td>IRJHAM</td>
+                        <td>FTTN-BP</td>
+                        <td>5.91</td>
+                        <td>7.01</td>
+                        <td>COMPLETE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>W01101000</td>
+                        <td>Mar-5 10:05</td>
+                        <td>Mar-5 11:30</td>
+                        <td>IRJHAM</td>
+                        <td>FTTN-BP</td>
+                        <td>5.91</td>
+                        <td>7.01</td>
+                        <td>COMPLETE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>W01101000</td>
+                        <td>Mar-5 12:00</td>
+                        <td>Mar-5 14:00</td>
+                        <td>IRJHAM</td>
+                        <td>FTTN-BP</td>
+                        <td>5.91</td>
+                        <td>7.01</td>
+                        <td>COMPLETE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>W01101000</td>
+                        <td>Mar-5 14:15</td>
+                        <td>Mar-5 16:10</td>
+                        <td>IRJHAM</td>
+                        <td>FTTN-BP</td>
+                        <td>5.91</td>
+                        <td>7.01</td>
+                        <td>RETURN</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
               </div>
-              <div class="card-body">
-                <ul class="list-group">
-                  <li
-                    class="list-group-item d-flex justify-content-between align-items-center"
+            </div>
+          </div>
+
+          <!-- Modal Time Summary -->
+          <div
+            class="modal modal-xl"
+            id="timeSummary"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Time Summary
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
                   >
-                    <i class="fas fa-clipboard-list text-secondary"></i>
-                    Total Jobs
-                    <span
-                      class="badge badge-primary badge-pill"
-                      data-toggle="tooltip-miss"
-                      data-placement="bottom"
-                      title="install x 4"
-                      >4</span
-                    >
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-between align-items-center"
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-warning">
+                      <tr>
+                        <th>AM</th>
+                        <th>PM</th>
+                        <th>TRAVEL</th>
+                        <th>FUEL</th>
+                        <th>TOTAL EARNED</th>
+                        <th>TOTAL DISPOUT</th>
+                        <th>DAILY JOB ESM</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0.24</td>
+                        <td>0.16</td>
+                        <td>1.27</td>
+                        <td>0.03</td>
+                        <td>14.84</td>
+                        <td>6.98</td>
+                        <td>6.98</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
                   >
-                    <i class="fas fa-clipboard-check text-success"></i>
-                    CMP jobs
-                    <span
-                      class="badge badge-success badge-pill"
-                      data-toggle="tooltip-miss"
-                      data-placement="bottom"
-                      title="install x 3"
-                      >3</span
-                    >
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-between align-items-center"
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Logistic Summary -->
+          <div
+            class="modal modal-xl"
+            id="logSummary"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Time Summary
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
                   >
-                    <i class="fas fa-times-circle text-danger"></i>
-                    INC Jobs
-                    <span
-                      class="badge badge-danger badge-pill"
-                      data-toggle="tooltip-miss"
-                      data-placement="bottom"
-                      title="install x 1"
-                      >1</span
-                    >
-                  </li>
-                </ul>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-warning">
+                      <tr>
+                        <th>Start Time</th>
+                        <th>Left Garage</th>
+                        <th>Depart Diff</th>
+                        <th>Scheduled Stop</th>
+                        <th>Last Stop</th>
+                        <th>Return Diff</th>
+                        <th>Drive Duration</th>
+                        <th>Stop Duration</th>
+                        <th>Stop Points</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Mar-5 08:00</td>
+                        <td>Mar-5 08:15</td>
+                        <td>.25</td>
+                        <td>Mar-5 16:30</td>
+                        <td>Mar-5 16:00</td>
+                        <td>.50</td>
+                        <td>1.00</td>
+                        <td>1.00</td>
+                        <td>4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="col-md-4">
+          <!-- Content -->
+          <div class="card h-100">
+            <div class="card-header bg-info">
+              Key Metrics
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Performance
+                  <span
+                    class="badge badge-danger badge-pill"
+                    data-toggle="modal"
+                    data-target="#performance"
+                    >7</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Dispatch
+                  <span
+                    class="badge badge-danger badge-pill"
+                    data-toggle="modal"
+                    data-target="#dispatch"
+                    >2</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  HPC
+                  <span
+                    class="badge badge-success badge-pill"
+                    data-toggle="modal"
+                    data-target="#hpc"
+                    >5</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Quality
+                  <span
+                    class="badge badge-danger badge-pill"
+                    data-toggle="modal"
+                    data-target="#quality"
+                    >1</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary">
+                <i class="fas fa-edit"></i>
+                Coach
+              </button>
+              <button type="button" class="btn btn-success">
+                <i class="fas fa-trophy"></i>
+                Recognition
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal Performance -->
+          <div
+            class="modal modal-xl"
+            id="performance"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Performance
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-info">
+                      <tr>
+                        <th>Efficiency</th>
+                        <th>Utilization</th>
+                        <th>Productivity</th>
+                        <th>Total Hrs Wrk</th>
+                        <th>Earned Hrs</th>
+                        <th>Demand Hrs</th>
+                        <th>Non-Productive Hrs</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>100%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td class="alert">7.5</td>
+                        <td class="alert">4</td>
+                        <td class="alert">4</td>
+                        <td class="alert">4</td>
+                      </tr>
+                    </tbody>
+                    <thead class="bg-info">
+                      <tr>
+                        <th>Available time Not Dispatched</th>
+                        <th>NJA hrs</th>
+                        <th>Execption Hrs</th>
+                        <th>Execption Codes</th>
+                        <th>Lunch Taken</th>
+                        <th>Dispatched Through Lunch</th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <td class="alert">4</td>
+                      <td class="alert">4</td>
+                      <td class="alert">4</td>
+                      <td>1</td>
+                      <td>Y</td>
+                      <td>Y</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Dispatch -->
+          <div
+            class="modal modal-xl"
+            id="dispatch"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Dispatch
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-info">
+                      <tr>
+                        <th>DE</th>
+                        <th>Total Jobs</th>
+                        <th>Completed install</th>
+                        <th>Completed Repair</th>
+                        <th>Jep Install</th>
+                        <th>Jep Repair</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="alert">75%</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td class="alert">1</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal HPC -->
+          <div
+            class="modal modal-xl"
+            id="hpc"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    HPC
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-info">
+                      <tr>
+                        <th>Completed</th>
+                        <th>HPC</th>
+                        <th>Goal</th>
+                        <th>Variance Hrs</th>
+                        <th>% HPC Variance</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3</td>
+                        <td>1.5</td>
+                        <td>3.5</td>
+                        <td>-2</td>
+                        <td>-20</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Quality -->
+          <div
+            class="modal modal-xl"
+            id="quality"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Quality
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-info">
+                      <tr>
+                        <th>AIQ</th>
+                        <th>Job base</th>
+                        <th>Install defects</th>
+                        <th>Repair Defects</th>
+                        <th>Pending Install Defects</th>
+                        <th>Pending Repair Defects</th>
+                        <th>Total Number of Defects</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>90%</td>
+                        <td>40</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td class="alert">1</td>
+                        <td>4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Scorecard -->
+        <div class="col-md-4">
+          <!-- Content -->
+          <div class="card h-100">
+            <div class="card-header bg-info">
+              Scorecard Metrics
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Efficiency/Utilization
+                  <span
+                    class="badge badge-danger badge-pill"
+                    data-toggle="modal"
+                    data-target="#ef"
+                    >3</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  DE
+                  <span
+                    class="badge badge-danger badge-pill"
+                    data-toggle="modal"
+                    data-target="#de"
+                    >2</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  AIQ
+                  <span
+                    class="badge badge-success badge-pill"
+                    data-toggle="modal"
+                    data-target="#aiq"
+                    >2</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  VOC
+                  <span
+                    class="badge badge-success badge-pill"
+                    data-toggle="modal"
+                    data-target="#voc"
+                    >2</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  EP/Attainment
+                  <span
+                    class="badge badge-success badge-pill"
+                    data-toggle="modal"
+                    data-target="#ep"
+                    >2</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary">
+                <i class="fas fa-edit"></i>
+                Coach
+              </button>
+              <button type="button" class="btn btn-success">
+                <i class="fas fa-trophy"></i>
+                Recognition
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal Efficiency/Utilization -->
+          <div
+            class="modal modal-xl"
+            id="ef"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Efficiency/Utilization
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-info">
+                      <tr>
+                        <th>Install 1st AVA</th>
+                        <th>Repair 1st AVA</th>
+                        <th>Made Appt Install</th>
+                        <th>Repair Customer Duration</th>
+                        <th>Repair Customer Duration DS1</th>
+                        <th>Repair Customer Duration Ethernet</th>
+                        <th>HPC</th>
+                        <th>Multiple Dispatch Rate</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>4.64</td>
+                        <td>55%</td>
+                        <td>58.36%</td>
+                        <td>2.62</td>
+                        <td>4</td>
+                        <td class="alert">3.0</td>
+                        <td class="alert">4</td>
+                        <td class="alert">4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal DE -->
+          <div
+            class="modal modal-xl"
+            id="de"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    DE
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-info">
+                      <tr>
+                        <th>SDCR Install</th>
+                        <th>SDCR Repair</th>
+                        <th>MDR Install</th>
+                        <th>MDR Repair</th>
+                        <th>HPC Install</th>
+                        <th>HPC Repair</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="alert">50</td>
+                        <td>79.54</td>
+                        <td>1.34</td>
+                        <td>1.36</td>
+                        <td class="alert">6.21</td>
+                        <td>3.43</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal AIQ -->
+          <div
+            class="modal modal-xl"
+            id="aiq"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    AIQ
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-info">
+                      <tr>
+                        <th>Install</th>
+                        <th>Repair</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>90.3</td>
+                        <td>88</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal VOC -->
+          <div
+            class="modal modal-xl"
+            id="voc"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    VOC
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-info">
+                      <tr>
+                        <th>Voice of the Customer</th>
+                        <th>New Surveys</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>95%</td>
+                        <td>4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal EP  -->
+          <div
+            class="modal modal-xl"
+            id="ep"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    EP/Attainment
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-info">
+                      <tr>
+                        <th>Effective Performance</th>
+                        <th>Attainment</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>77</td>
+                        <td>55</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
               </div>
             </div>
           </div>
