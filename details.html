@@ -14,6 +14,10 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css"></script>
+    <link
+      href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/img/attLogo.png" type="image/png" />
   </head>
@@ -396,7 +400,7 @@
                 >
                   Performance
                   <span
-                    class="badge badge-danger badge-pill"
+                    class="badge badge-danger badge-pill badge-pill-click"
                     data-toggle="modal"
                     data-target="#performance"
                     >7</span
@@ -407,7 +411,7 @@
                 >
                   Dispatch
                   <span
-                    class="badge badge-danger badge-pill"
+                    class="badge badge-danger badge-pill badge-pill-click"
                     data-toggle="modal"
                     data-target="#dispatch"
                     >2</span
@@ -418,7 +422,7 @@
                 >
                   HPC
                   <span
-                    class="badge badge-success badge-pill"
+                    class="badge badge-success badge-pill badge-pill-click"
                     data-toggle="modal"
                     data-target="#hpc"
                     >5</span
@@ -429,7 +433,7 @@
                 >
                   Quality
                   <span
-                    class="badge badge-danger badge-pill"
+                    class="badge badge-danger badge-pill badge-pill-click"
                     data-toggle="modal"
                     data-target="#quality"
                     >1</span
@@ -744,7 +748,7 @@
                 >
                   Efficiency/Utilization
                   <span
-                    class="badge badge-danger badge-pill"
+                    class="badge badge-danger badge-pill badge-pill-click"
                     data-toggle="modal"
                     data-target="#ef"
                     >3</span
@@ -755,7 +759,7 @@
                 >
                   DE
                   <span
-                    class="badge badge-danger badge-pill"
+                    class="badge badge-danger badge-pill badge-pill-click"
                     data-toggle="modal"
                     data-target="#de"
                     >2</span
@@ -766,7 +770,7 @@
                 >
                   AIQ
                   <span
-                    class="badge badge-success badge-pill"
+                    class="badge badge-success badge-pill badge-pill-click"
                     data-toggle="modal"
                     data-target="#aiq"
                     >2</span
@@ -777,7 +781,7 @@
                 >
                   VOC
                   <span
-                    class="badge badge-success badge-pill"
+                    class="badge badge-success badge-pill badge-pill-click"
                     data-toggle="modal"
                     data-target="#voc"
                     >2</span
@@ -788,7 +792,7 @@
                 >
                   EP/Attainment
                   <span
-                    class="badge badge-success badge-pill"
+                    class="badge badge-success badge-pill badge-pill-click"
                     data-toggle="modal"
                     data-target="#ep"
                     >2</span
@@ -1107,6 +1111,506 @@
                   <button type="button" class="btn btn-primary">
                     <i class="fas fa-edit"></i>
                     Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Content -->
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <!-- Compliance -->
+        <div class="col-md-4">
+          <!-- Content -->
+          <div class="card h-100">
+            <div class="card-header bg-primary">
+              Compliance/Admin
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Stats
+                  <span
+                    class="badge badge-danger badge-pill"
+                    data-toggle="tooltip-miss"
+                    data-placement="bottom"
+                    title="Attention: Billing | True testing "
+                    >2</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Administrative
+                  <span
+                    class="badge badge-success badge-pill"
+                    data-toggle="tooltip-miss"
+                    data-placement="bottom"
+                    title="All items completed"
+                    >8</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  VIPIRT
+                  <span
+                    class="badge badge-success badge-pill"
+                    data-toggle="tooltip-miss"
+                    data-placement="bottom"
+                    title="No new items"
+                    >2</span
+                  >
+                </li>
+              </ul>
+              <ul class="list-group list-group-flush">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Details
+                  <i
+                    class="fas fa-folder-open"
+                    data-toggle="modal"
+                    data-target="#compDetails"
+                  ></i>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary">
+                <i class="fas fa-edit"></i>
+                Coach
+              </button>
+              <button type="button" class="btn btn-success">
+                <i class="fas fa-trophy"></i>
+                Recognition
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal Compliance  -->
+          <div
+            class="modal modal-xl"
+            id="compDetails"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Compliance/Admin
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-bordered">
+                    <thead class="bg-primary">
+                      <tr>
+                        <th colspan="3">Stats</th>
+                      </tr>
+                    </thead>
+                    <thead class="bg-secondary">
+                      <tr>
+                        <th>Billing</th>
+                        <th>TRUE</th>
+                        <th>Required Monthly Coverages</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>40</th>
+                        <td>68</td>
+                        <td>90</td>
+                      </tr>
+                    </tbody>
+                    <thead class="bg-primary">
+                      <tr>
+                        <th colspan="8">Administrative</th>
+                      </tr>
+                    </thead>
+                    <thead class="bg-secondary">
+                      <tr>
+                        <th>Crew Meetings</th>
+                        <th>Safety Meeting</th>
+                        <th>Qualities</th>
+                        <th>Safeties</th>
+                        <th>Rides</th>
+                        <th>Coaching</th>
+                        <th>Disiplinary Action</th>
+                        <th>CAP</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>1</th>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                    <thead class="bg-primary">
+                      <tr>
+                        <th colspan="2">VIPIRT</th>
+                      </tr>
+                    </thead>
+                    <thead class="bg-secondary">
+                      <tr>
+                        <th>New</th>
+                        <th>In Progress</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>1</th>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-edit"></i>
+                    Coach
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="card h-100">
+            <div class="card-header bg-secondary">
+              Recommended Actions
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Alert Items
+                  <span
+                    class="badge badge-danger badge-pill badge-pill-click"
+                    data-toggle="modal"
+                    data-target="#alert-items"
+                    >18</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Succcess Items
+                  <span
+                    class="badge badge-success badge-pill badge-pill-click"
+                    data-toggle="modal"
+                    data-target="#success-items"
+                    >24</span
+                  >
+                </li>
+              </ul>
+
+              <ul class="list-group list-group-flush">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Alert Items Covered
+                  <span class="badge badge-success badge-pill">Dispatch</span>
+                  <span class="badge badge-success badge-pill">Quality</span>
+                  <span class="badge badge-success badge-pill"
+                    >EP/Attainment
+                  </span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Alert Items Pending
+                  <span class="badge badge-danger badge-pill">Performance</span>
+                  <span class="badge badge-danger badge-pill">Dispatch </span>
+                  <span class="badge badge-danger badge-pill">DE </span>
+                  <span class="badge badge-danger badge-pill">INC Jobs </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modal Alert items -->
+          <div
+            class="modal modal-xl"
+            id="alert-items"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-md" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Covrage Items
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Verbal Coverage</label
+                      ><br />
+                      <ul class="list-group">
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center"
+                        >
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                          <label for="formGroupExampleInput">Efficiency</label>
+                          <span class="align-items-end"
+                            ><button type="button" class="btn btn-primary">
+                              <i class="fas fa-edit"></i>
+                              Coach
+                            </button></span
+                          >
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center"
+                        >
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                          <label for="formGroupExampleInput">DE</label>
+                          <span class="align-items-end"
+                            ><button type="button" class="btn btn-primary">
+                              <i class="fas fa-edit"></i>
+                              Coach
+                            </button></span
+                          >
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center"
+                        >
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                          <label for="formGroupExampleInput"
+                            >WiFi Testing</label
+                          >
+                          <span class="align-items-end"
+                            ><button type="button" class="btn btn-primary">
+                              <i class="fas fa-edit"></i>
+                              Coach
+                            </button></span
+                          >
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center"
+                        >
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                          <label for="formGroupExampleInput">TRUE </label>
+                          <span class="align-items-end"
+                            ><button type="button" class="btn btn-primary">
+                              <i class="fas fa-edit"></i>
+                              Coach
+                            </button></span
+                          >
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center"
+                        >
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                          <label for="formGroupExampleInput">Billing </label>
+                          <span class="align-items-end"
+                            ><button type="button" class="btn btn-primary">
+                              <i class="fas fa-edit"></i>
+                              Coach
+                            </button></span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Success items -->
+          <div
+            class="modal modal-xl"
+            id="success-items"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-md" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Covrage Items
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput"
+                        >Verbal Recognition</label
+                      ><br />
+                      <ul class="list-group">
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center"
+                        >
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                          <label for="formGroupExampleInput">Efficiency</label>
+                          <span class="align-items-end"
+                            ><button type="button" class="btn btn-success">
+                              <i class="fas fa-trophy"></i>
+                              Recognition
+                            </button></span
+                          >
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center"
+                        >
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                          <label for="formGroupExampleInput">DE</label>
+                          <span class="align-items-end"
+                            ><button type="button" class="btn btn-success">
+                              <i class="fas fa-trophy"></i>
+                              Recognition
+                            </button></span
+                          >
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center"
+                        >
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                          <label for="formGroupExampleInput"
+                            >WiFi Testing</label
+                          >
+                          <span class="align-items-end"
+                            ><button type="button" class="btn btn-success">
+                              <i class="fas fa-trophy"></i>
+                              Recognition
+                            </button></span
+                          >
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center"
+                        >
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                          <label for="formGroupExampleInput">TRUE </label>
+                          <span class="align-items-end"
+                            ><button type="button" class="btn btn-success">
+                              <i class="fas fa-trophy"></i>
+                              Recognition
+                            </button></span
+                          >
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center"
+                        >
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                          <label for="formGroupExampleInput">Billing </label>
+                          <span class="align-items-end"
+                            ><button type="button" class="btn btn-success">
+                              <i class="fas fa-trophy"></i>
+                              Recognition
+                            </button></span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    Submit
                   </button>
                 </div>
               </div>
